@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#id-menu {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+@media (max-width: 768px) {
+    #nav a {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background: none;
+        gap: 2rem;
+    }
+    #hamburger {
+        display: none;
+    }
+}
+
+
