@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 
-#id-menu {
+header {
     background: #333;
-    color: white;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -14,16 +13,45 @@
     position: relative;
 }
 
+.hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 
+.nav {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 100%;
+    left: 0; /* positionerad till vänster */
+    right: auto;
+    z-index: 10;
+}
 
-@media (max-width: 768px) {
-    #nav a {
-        display: flex;
+.nav a {
+    display: block;
+    padding: 1rem;
+    color:white;
+    text-decoration: none;
+}
+
+.nav.is-open {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display: flex !important;
         position: static;
         flex-direction: row;
         width: auto;
         background: none;
         gap: 2rem;
+        margin: 0;
     }
     #hamburger {
         display: none;
