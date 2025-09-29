@@ -27,7 +27,8 @@ header {
     background: #333;
     position: absolute;
     top: 100%;
-    left: 0; /* positionerad till vänster */
+    left: 0;
+    /* positionerad till vänster */
     right: auto;
     z-index: 10;
 }
@@ -35,9 +36,11 @@ header {
 .nav a {
     display: block;
     padding: 1rem;
-    color:white;
+    color: white;
     text-decoration: none;
 }
+
+/* deklarera "är öppen" klass */
 
 .nav.is-open {
     display: flex;
@@ -53,9 +56,8 @@ header {
         gap: 2rem;
         margin: 0;
     }
+
     #hamburger {
         display: none;
     }
 }
-
-
